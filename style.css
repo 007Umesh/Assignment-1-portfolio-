@@ -180,36 +180,18 @@
 
 .userimage {
     position: relative;
-    height: 500px;
+    height: 400px;
     top: 40px;
     left: 120px;
     border-radius: 10%;
-    filter: grayscale(1);
-    transition: all 1s;
-    animation: scaleImage 5s linear infinite;
+    transition: all 0.5s;
+     box-shadow: 5px 5px 5px  grey;
 }
 
-.userimage img {
-    z-index: -9;
-}
-
-@keyframes scaleImage {
-    0% {
-        filter: grayscale(0);
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-        filter: grayscale(1);
-        box-shadow: 3px 3px 10px blueviolet;
-    }
-
-    100% {
-        transform: scale(1);
-        filter: grayscale(0);
-    }
-
+.userimage:hover{
+    cursor: pointer;
+transform: scale(1.1);
+box-shadow: 7px 7px 7px  #F148FB;
 }
 
 .projectsection {
@@ -405,6 +387,8 @@
 }
 
 .skills-logo {
+    display: flex;
+    flex-wrap: wrap;
     width: 120px;
     height: auto;
     transition: all 0.5s;
